@@ -1,11 +1,11 @@
 :root {
-  --bg: #fdf8f2;
-  --surface: #fffcf8;
-  --accent: #c17f5f;
-  --accent-light: #f5ebe0;
-  --text: #3a3028;
-  --muted: #7a6a5f;
-  --border: #e8ddd4;
+  --bg: #0a0a0a;
+  --surface: #111a13;
+  --accent: #4d8c63;
+  --accent-light: #1a2e22;
+  --text: #e2e8e4;
+  --muted: #7a9181;
+  --border: #1e2e24;
 }
 
 * {
@@ -136,7 +136,7 @@ h2 {
 
 .card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(193, 127, 95, 0.12);
+  box-shadow: 0 8px 24px rgba(77, 140, 99, 0.15);
 }
 
 .card h3 {
