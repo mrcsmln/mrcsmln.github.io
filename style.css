@@ -35,8 +35,7 @@ nav {
 }
 
 .nav-name {
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.05rem;
 }
 
@@ -59,7 +58,7 @@ nav a:hover {
 
 /* ── Sections ── */
 section {
-  max-width: 800px;
+  max-width: 780px;
   margin: 0 auto;
   padding: 5rem 2rem;
 }
@@ -72,31 +71,41 @@ section {
 
 .greeting {
   color: var(--accent);
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 0.4rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
 }
 
 h1 {
-  font-family: 'Inter', sans-serif;
-  font-size: clamp(2.5rem, 6vw, 4rem);
-  line-height: 1.15;
+  font-size: clamp(2.5rem, 6vw, 3.8rem);
+  font-weight: 700;
+  line-height: 1.1;
   margin-bottom: 1rem;
 }
 
 .tagline {
   color: var(--muted);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   margin-bottom: 2rem;
   max-width: 520px;
+  line-height: 1.8;
+}
+
+.hero-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .btn {
   display: inline-block;
-  padding: 0.7rem 1.6rem;
+  padding: 0.65rem 1.4rem;
   background: var(--accent);
   color: white;
   text-decoration: none;
-  border-radius: 999px;
+  border-radius: 6px;
   font-size: 0.9rem;
   transition: opacity 0.2s;
 }
@@ -105,62 +114,143 @@ h1 {
   opacity: 0.85;
 }
 
-/* ── Headings ── */
+.btn-outline {
+  display: inline-block;
+  padding: 0.65rem 1.4rem;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.btn-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ── Section headings ── */
 h2 {
-  font-family: 'Inter', sans-serif;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--accent-light);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 
-/* ── About ── */
-#about p {
-  margin-bottom: 1rem;
+/* ── Research Interests ── */
+.interest-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
 }
 
-/* ── Projects ── */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1.5rem;
-}
-
-.card {
+.interest-list li {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 1.5rem;
-  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  color: var(--text);
 }
 
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(77, 140, 99, 0.15);
+/* ── Publications ── */
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.card h3 {
-  font-family: 'Inter', sans-serif;
+.pub {
+  border-left: 2px solid var(--accent);
+  padding-left: 1.2rem;
+}
+
+.pub-title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.pub-title a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.pub-title a:hover {
+  color: var(--accent);
+}
+
+.pub-authors {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.15rem;
+}
+
+.pub-journal {
+  font-size: 0.85rem;
+  color: var(--muted);
   margin-bottom: 0.5rem;
 }
 
-.card p {
-  color: var(--muted);
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
+.pub-links {
+  display: flex;
+  gap: 0.8rem;
 }
 
-.card a {
+.pub-links a {
+  font-size: 0.8rem;
   color: var(--accent);
   text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
+  border: 1px solid var(--accent-light);
+  padding: 0.15rem 0.6rem;
+  border-radius: 4px;
+  transition: background 0.2s;
 }
 
-/* ── Shared ── */
-.muted {
+.pub-links a:hover {
+  background: var(--accent-light);
+}
+
+/* ── Past Research ── */
+.research-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.research-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.2rem;
+}
+
+.research-header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.research-date {
+  font-size: 0.85rem;
   color: var(--muted);
-  font-style: italic;
+}
+
+.research-role {
+  font-size: 0.9rem;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+}
+
+.research-list p {
+  font-size: 0.95rem;
+  color: var(--muted);
 }
 
 /* ── Contact ── */
@@ -202,5 +292,10 @@ footer {
 
   section {
     padding: 3.5rem 1.2rem;
+  }
+
+  .research-header {
+    flex-direction: column;
+    gap: 0.2rem;
   }
 }
