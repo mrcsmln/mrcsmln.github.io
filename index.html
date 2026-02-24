@@ -14,101 +14,145 @@
   <nav>
     <span class="nav-name">Marcus Mullen</span>
     <ul>
-      <li><a href="#interests">Research</a></li>
       <li><a href="#publications">Publications</a></li>
-      <li><a href="#past-research">Past Research</a></li>
+      <li><a href="#research">Research</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="blog.html" class="nav-blog">Adventures</a></li>
     </ul>
   </nav>
 
-  <section id="hero">
-    <p class="greeting">Hello, I'm</p>
-    <h1>Marcus Mullen</h1>
-    <p class="tagline">PhD Student in Biology · University of Colorado<br>
-    [One sentence about your research focus]</p>
-    <div class="hero-links">
-      <a href="#publications" class="btn">Publications</a>
-      <a href="#contact" class="btn-outline">Get in touch</a>
+  <!-- CV Header -->
+  <header class="cv-header">
+    <div class="cv-header-inner">
+      <div class="cv-title">
+        <h1>Marcus Mullen</h1>
+        <p class="cv-subtitle">PhD Student · Department of [Your Department]</p>
+        <p class="cv-institution">University of Colorado Boulder</p>
+      </div>
+      <div class="cv-contact-inline">
+        <a href="mailto:your@email.com">your@email.com</a>
+        <a href="https://github.com/mrcsmln" target="_blank">GitHub</a>
+        <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+      </div>
     </div>
-  </section>
+  </header>
 
-  <section id="interests">
-    <h2>Research Interests</h2>
-    <ul class="interest-list">
-      <li>[Research area one]</li>
-      <li>[Research area two]</li>
-      <li>[Research area three]</li>
-      <li>[Research area four]</li>
-    </ul>
-  </section>
+  <main class="cv-body">
 
-  <section id="publications">
-    <h2>Publications</h2>
-
-    <div class="pub-list">
-
-      <div class="pub">
-        <p class="pub-title"><a href="#">Paper Title Goes Here</a></p>
-        <p class="pub-authors">Mullen, M., Author, B., & Author, C.</p>
-        <p class="pub-journal"><em>Journal Name</em> · 2025</p>
-        <div class="pub-links">
-          <a href="#">PDF</a>
-          <a href="#">DOI</a>
-        </div>
+    <!-- About -->
+    <section class="cv-section" id="about">
+      <h2 class="cv-section-label">About</h2>
+      <div class="cv-section-content">
+        <p>[A few sentences about your research. What questions do you work on? What methods or organisms do you use? What drives your work?]</p>
       </div>
+    </section>
 
-      <div class="pub">
-        <p class="pub-title"><a href="#">Another Paper Title Goes Here</a></p>
-        <p class="pub-authors">Mullen, M., & Author, B.</p>
-        <p class="pub-journal"><em>Journal Name</em> · 2024</p>
-        <div class="pub-links">
-          <a href="#">PDF</a>
-          <a href="#">DOI</a>
-        </div>
+    <!-- Research Interests -->
+    <section class="cv-section" id="interests">
+      <h2 class="cv-section-label">Research Interests</h2>
+      <div class="cv-section-content">
+        <ul class="interest-list">
+          <li>[Research area one]</li>
+          <li>[Research area two]</li>
+          <li>[Research area three]</li>
+          <li>[Research area four]</li>
+        </ul>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- Education -->
+    <section class="cv-section" id="education">
+      <h2 class="cv-section-label">Education</h2>
+      <div class="cv-section-content">
 
-  <section id="past-research">
-    <h2>Past Research</h2>
-
-    <div class="research-list">
-
-      <div class="research-item">
-        <div class="research-header">
-          <h3>[Project or Lab Name]</h3>
-          <span class="research-date">2022 – 2023</span>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">PhD, [Your Field]</span>
+            <span class="cv-entry-date">2023 – Present</span>
+          </div>
+          <span class="cv-entry-sub">University of Colorado Boulder</span>
         </div>
-        <p class="research-role">[Your role, e.g. Research Assistant · University of Colorado]</p>
-        <p>Brief description of what you worked on and what you contributed or learned.</p>
-      </div>
 
-      <div class="research-item">
-        <div class="research-header">
-          <h3>[Project or Lab Name]</h3>
-          <span class="research-date">2021 – 2022</span>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">BS, [Your Field]</span>
+            <span class="cv-entry-date">2019 – 2023</span>
+          </div>
+          <span class="cv-entry-sub">[Your Undergraduate Institution]</span>
         </div>
-        <p class="research-role">[Your role · Institution]</p>
-        <p>Brief description of what you worked on and what you contributed or learned.</p>
+
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- Publications -->
+    <section class="cv-section" id="publications">
+      <h2 class="cv-section-label">Publications</h2>
+      <div class="cv-section-content">
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Feel free to reach out about research, collaboration, or anything else.</p>
-    <ul class="contact-links">
-      <li><a href="mailto:your@email.com">your@email.com</a></li>
-      <li><a href="https://github.com/mrcsmln" target="_blank">GitHub</a></li>
-      <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
-      <li><a href="https://scholar.google.com" target="_blank">Google Scholar</a></li>
-    </ul>
-  </section>
+        <div class="pub-entry">
+          <p class="pub-title"><a href="#">Paper Title Goes Here</a></p>
+          <p class="pub-meta">Mullen, M., Author, B., & Author, C. (2025). <em>Journal Name, 12</em>(3), 100–115.</p>
+          <div class="pub-links">
+            <a href="#">PDF</a>
+            <a href="#">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-entry">
+          <p class="pub-title"><a href="#">Another Paper Title Goes Here</a></p>
+          <p class="pub-meta">Mullen, M., & Author, B. (2024). <em>Journal Name, 8</em>(1), 45–60.</p>
+          <div class="pub-links">
+            <a href="#">PDF</a>
+            <a href="#">DOI</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Past Research -->
+    <section class="cv-section" id="research">
+      <h2 class="cv-section-label">Past Research</h2>
+      <div class="cv-section-content">
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">[Project or Lab Name]</span>
+            <span class="cv-entry-date">2022 – 2023</span>
+          </div>
+          <span class="cv-entry-sub">[Your Role] · [Institution]</span>
+          <p class="cv-entry-desc">Brief description of what you worked on, your contributions, and key outcomes.</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">[Project or Lab Name]</span>
+            <span class="cv-entry-date">2021 – 2022</span>
+          </div>
+          <span class="cv-entry-sub">[Your Role] · [Institution]</span>
+          <p class="cv-entry-desc">Brief description of what you worked on, your contributions, and key outcomes.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="cv-section" id="contact">
+      <h2 class="cv-section-label">Contact</h2>
+      <div class="cv-section-content">
+        <ul class="contact-list">
+          <li><span class="contact-label">Email</span><a href="mailto:your@email.com">your@email.com</a></li>
+          <li><span class="contact-label">GitHub</span><a href="https://github.com/mrcsmln" target="_blank">github.com/mrcsmln</a></li>
+          <li><span class="contact-label">Scholar</span><a href="https://scholar.google.com" target="_blank">Google Scholar</a></li>
+          <li><span class="contact-label">LinkedIn</span><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
 
   <footer>
-    <p>© 2026 Marcus Mullen</p>
+    <p>© 2026 Marcus Mullen · <a href="blog.html">Adventures</a></p>
   </footer>
 
 </body>
